@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaskApp</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body id="bd">
+
+        <!--navegación-->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">Task App</a>
+            </div>
+        </nav>
+
+        <!--contenido principal-->
+        <div class="container">
+            <div class="row pt-5">
+                <!--formulario-->
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="form-task">
+                                <div class="form-group">
+                                    <input id="txt-title" class="form-control" type="text" placeholder="add a todo">
+                                </div>
+
+                                <br>
+
+                                <div class="form-group">
+                                    <textarea id="txt-description" class="form-control" rows="8" cols="80" placeholder="add text"></textarea>
+                                </div>
+
+                                <br>
+
+                                <div class="d-grid gap-2">
+                                    <button id="btn-save" type="submit" class="btn btn-primary btn-block">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!--tareas-->
+                <div class="col-md-8">
+                    
+                    <!--se selecciona desde JS el div y se le agregan las tareas-->
+                    <div id="tasks">
+                        <!--div class="card ps-3 pt-2 mb-3">
+                            <p class="h4">titulo</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id quis quasi perferendis eveniet adipisci, possimus, quisquam dolorum maxime fugit temporibus animi ipsa vitae vero ex sequi aliquid pariatur tempore.</p>
+
+                            <div class="d-grid gap-2 d-md-block mb-3">
+                                <button id="btn-delete" class="btn btn-danger">delete</button>
+                            </div>
+                        </div>
+
+                        <div class="card ps-3 pt-2 mb-3">
+                            <p class="h4">titulo</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id quis quasi perferendis eveniet adipisci, possimus, quisquam dolorum maxime fugit temporibus animi ipsa vitae vero ex sequi aliquid pariatur tempore.</p>
+
+                            <div class="d-grid gap-2 d-md-block mb-3">
+                                <button id="btn-delete" class="btn btn-danger">delete</button>
+                            </div>
+                        </div-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
